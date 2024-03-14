@@ -38,5 +38,5 @@ func init() {
 	//返回是构造函数而不是实例，像工厂模式（返回实例）但不是
 	NewCodecFuncMap = make(map[Type]NewCodecFunc) //初始化全局变量，分配内存空间
 	//CS可以通过Codec的Type得到构造函数，从而创建Codec实例
-	NewCodecFuncMap[GobType] = NewGobCodec
+	NewCodecFuncMap[GobType] = NewGobCodec //一个包下，直接调用
 }

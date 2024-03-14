@@ -73,7 +73,7 @@ func (server *Server) Accept(listener net.Listener) {
 	}
 }
 
-func Accpet(listener net.Listener) {
+func Accept(listener net.Listener) {
 	DefaultServer.Accept(listener) //调用连接
 }
 

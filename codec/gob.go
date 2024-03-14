@@ -62,5 +62,6 @@ func (c *GobCodec) Write(h *Header, body interface{}) (err error) {
 		log.Println("rpc codec:gob error encoding body:", err) //编码错误
 		return err
 	}
+
 	return nil
 }
